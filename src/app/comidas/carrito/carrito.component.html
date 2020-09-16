@@ -1,0 +1,16 @@
+<div *ngIf="cartItems.length===1" class=" cart alert alert-danger">Tu carrito esta vacío</div>
+
+<div class="row">
+  <div class="cart">
+    <ul *ngIf="cartItems.length>0" class="list-group-item">
+      <li class="list-group-item" *ngFor="let item of cartItems">
+        <app-carrito-item [cartItems]="item"></app-carrito-item>
+      </li>
+      <li class="list-group-item bg-danger">
+        <strong>Total: {{cartTotal| currency: '$'}}</strong><br>
+        <button class="btn btn-danger" routerLink="/alert-component" routerLinkActive="active">Continuar</button>
+      </li>
+    </ul>
+
+  </div>
+</div>

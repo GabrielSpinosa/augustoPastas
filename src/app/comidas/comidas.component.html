@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-12">
+    <main id="menu">
+      <img class="logo" src="./assets/Imagenes/logo.jpg"><br/><br/>
+        <div class="imagen">
+          <a routerLink="/pastas-component" routerLinkActive="active"><img class="imagen" src="./assets/Imagenes/pastas.jpg" alt="PASTAS"></a><br/>
+          <a routerLink="/salsas-component" routerLinkActive="active"><img class="imagen" src="./assets/Imagenes/salsas.jpg" alt="SALSAS"></a><br/>
+          <a routerLink="/postres-component" routerLinkActive="active"><img class="imagen" src="./assets/Imagenes/postres.jpg" alt="POSTRES"></a><br/>
+        </div>
+        <div class="imagen2">
+          <a routerLink="/pastas-component" routerLinkActive="active"><img class="imagen2" src="./assets/Imagenes/pastas2.jpg" alt="PASTA"></a><br/>
+          <a routerLink="/salsas-component" routerLinkActive="active"><img class="imagen2" src="./assets/Imagenes/salsas2.jpg" alt="SALSAS"></a><br/>
+          <a routerLink="/postres-component" routerLinkActive="active"><img class="imagen2" src="./assets/Imagenes/postres2.jpg" alt="POSTRES"></a><br/>
+        </div>
+      <br>
+      <hr>
+      <br>
+    </main>
+  </div>
+  <div class="col-md-12">
+    <div class="container">
+      <router-outlet></router-outlet>
+      <br>
+      <hr>
+      <br>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <app-carrito></app-carrito>
+    <br>
+    <hr>
+    <br>
+  </div>
+</div>
+
